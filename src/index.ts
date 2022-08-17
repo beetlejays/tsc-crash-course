@@ -62,3 +62,35 @@ function log(message: string | number): void {  //return anything
     console.log(message)
 }
 
+// Interface  //can not be used with primive or union, used with objects
+interface UserInterface {
+    readonly id: number,  // readonly property
+    name: string
+    age?: number  // "?" means is optional
+}
+
+const user1: UserInterface = {
+    id: 1,
+    name: "John"
+}
+
+interface MathFunc {
+    (x:number, y: number): number
+}
+
+// Interface with function
+const add: MathFunc = (x: number, y: number): number => x + y
+const sub: MathFunc = (x: number, y: number): number => x - y
+
+// Classes
+class Person {
+    id: number
+    name: string
+
+    constructor(id: number, name: string) {
+        this.id = id
+        this.name = name
+    }
+}
+const jeff = new Person(1, "Jeff Bridges")
+
