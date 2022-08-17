@@ -44,3 +44,7 @@ let customerId = cid;
 function addNum(x, y) {
     return x + y;
 }
+// Void
+function log(message) {
+    console.log(message);
+}

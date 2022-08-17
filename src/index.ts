@@ -53,6 +53,12 @@ let cid: any = 1
 let customerId = cid as number
 
 // Functions
-function addNum(x: number,y: number): number {
+function addNum(x: number,y: number): number {  // return has to be a number
     return x + y
 }
+
+// Void
+function log(message: string | number): void {  //return anything
+    console.log(message)
+}
+
