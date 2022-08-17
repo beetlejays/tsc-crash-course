@@ -36,3 +36,11 @@ const user = {
     id: 1,
     name: "Jim"
 };
+// Type Assertion
+let cid = 1;
+// let customerId = <number>cid
+let customerId = cid;
+// Functions
+function addNum(x, y) {
+    return x + y;
+}
