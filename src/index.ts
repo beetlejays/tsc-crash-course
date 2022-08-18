@@ -105,4 +105,12 @@ class Person implements PersonInterface {
 const jeff = new Person(1, "Jeff Bridges")
 const mike = new Person(2, "mike mentzer")
 
+class Employee extends Person {
+    position: string
+    constructor(id: number, name: string, position: string) {
+        super(id,name)
+        this.position = position
+    }
+}
 
+const emp = new Employee(3, "Sean", "Developer")

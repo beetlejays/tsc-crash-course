@@ -67,3 +67,10 @@ class Person {
 }
 const jeff = new Person(1, "Jeff Bridges");
 const mike = new Person(2, "mike mentzer");
+class Employee extends Person {
+    constructor(id, name, position) {
+        super(id, name);
+        this.position = position;
+    }
+}
+const emp = new Employee(3, "Sean", "Developer");
