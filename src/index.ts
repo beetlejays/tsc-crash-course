@@ -105,6 +105,7 @@ class Person implements PersonInterface {
 const jeff = new Person(1, "Jeff Bridges")
 const mike = new Person(2, "mike mentzer")
 
+// Subclasses
 class Employee extends Person {
     position: string
     constructor(id: number, name: string, position: string) {
@@ -112,5 +113,13 @@ class Employee extends Person {
         this.position = position
     }
 }
-
 const emp = new Employee(3, "Sean", "Developer")
+
+// Generics
+function getArray<T>(items: T[]): T[] {
+    return new Array().concat(items)
+}
+
+let numArray = getArray<number>([1,2,3,4])
+let strArray = getArray<string>(["john", "frank", "joe"])
+

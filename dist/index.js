@@ -67,6 +67,7 @@ class Person {
 }
 const jeff = new Person(1, "Jeff Bridges");
 const mike = new Person(2, "mike mentzer");
+// Subclasses
 class Employee extends Person {
     constructor(id, name, position) {
         super(id, name);
@@ -74,3 +75,9 @@ class Employee extends Person {
     }
 }
 const emp = new Employee(3, "Sean", "Developer");
+// Generics
+function getArray(items) {
+    return new Array().concat(items);
+}
+let numArray = getArray([1, 2, 3, 4]);
+let strArray = getArray(["john", "frank", "joe"]);
